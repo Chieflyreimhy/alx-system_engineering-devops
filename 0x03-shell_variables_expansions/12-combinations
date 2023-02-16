@@ -1,2 +1,2 @@
 #!/bin/bash
-printf -v a "%s\n" {{a..n}{a..z},o{a..n},o{p..z},{p..z}{a..z}}; echo -n "$a"
+echo {a..z}{a..z} | tr " " "\n" | grep -v "oo"
