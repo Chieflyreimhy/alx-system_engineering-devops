@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e \\b{{a..n}{a..z},o{a..n},o{p..z},{p..z}{a..z}}\\n
+printf -v a "%s\n" {{a..n}{a..z},o{a..n},o{p..z},{p..z}{a..z}}; echo -n "$a"
